@@ -12,9 +12,9 @@ EmpireManager is a comprehensive web application designed to streamline business
 
 ## Technologies Used
 
-- **ASP.NET Core 5:** Framework used to develop the web application.
-- **Entity Framework Core:** Object-Relational Mapping (ORM) framework to interact with the database.
-- **SQL Server:** Relational database used to store application data.
+- **.NET Core 8.0:**
+- **Entity Framework Core:** 
+- **SQL Server:** 
 
 ## Project Structure
 
