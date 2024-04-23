@@ -1,6 +1,6 @@
 # 🧑🏻‍💻 EmpireManager
 
-This is a project aimed at managing employees, clients, products, orders, and sales items in a business environment.
+EmpireManager is a comprehensive web application designed to streamline business operations by effectively managing various aspects of the organization. It provides a centralized platform for handling employees, clients, products, orders, and sales items, catering to the diverse needs of a business environment.
 
 ## Features
 
