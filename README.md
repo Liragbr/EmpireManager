@@ -24,6 +24,13 @@ The project is organized as follows:
 - **EmpireManager.Data:** Contains the database context (ApplicationDbContext) and migration configurations.
 - **Controllers:** Contains controllers for each entity, responsible for handling HTTP requests and interacting with the database.
 
+# Used Packages
+
+- Microsoft.EntityFrameworkCore
+- Microsoft.EntityFrameworkCore.Design
+- Microsoft.EntityFrameworkCore.SqlServer
+- Microsoft.EntityFrameworkCore.Tools
+
 ## How to Run
 
 1. Clone the repository to your local machine.
