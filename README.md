@@ -31,6 +31,28 @@ The project is organized as follows:
 - Microsoft.EntityFrameworkCore.SqlServer
 - Microsoft.EntityFrameworkCore.Tools
 
+## Database
+
+The database integration was done using Entity Framework Core with the SQL Server provider. Migrations were used to manage the database structure.
+
+```
+dotnet ef migrations add InitialCreate
+```
+```
+dotnet ef database update
+```
+
+## Authentications
+
+**`appsettings.json`** SQL Server authentication:
+```
+"DefaultConnection": "Server=exmp\\SQLEXPRESS;Database=ReservationSystemDb;Trusted_Connection=True;MultipleActiveResultSets=true"
+```
+**`appsettings.json`** Windows Authentication:
+```
+"DefaultConnection": "Server=exmp\\SQLEXPRESS;DataBase=ReservationSystemDb;Integrated Security=SSPI;TrustServerCertificate=True"
+```
+
 ## How to Run
 
 1. Clone the repository to your local machine.
