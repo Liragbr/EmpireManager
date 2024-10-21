@@ -21,6 +21,15 @@ namespace EmpireManager.Data
             // Definindo a chave primária para a entidade ItemVenda
             modelBuilder.Entity<ItemVenda>()
                 .HasKey(iv => new { iv.ProdutoId, iv.VendaID }); // Substitua por sua chave primária
+
         }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer("Server=Lira\\SQLEXPRESS;DataBase=EmpireManagerDB;Integrated Security=SSPI;TrustServerCertificate=True");
+            }
+        }
+
     }
 }
