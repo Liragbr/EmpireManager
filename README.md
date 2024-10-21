@@ -42,15 +42,25 @@ dotnet ef migrations add InitialCreate
 dotnet ef database update
 ```
 
+## Database Update
+```
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;DataBase=EmpireManagerDB;Integrated Security=SSPI;TrustServerCertificate=True");
+            }
+```
+
 ## Authentications
 
 **`appsettings.json`** SQL Server authentication:
 ```
-"DefaultConnection": "Server=exmp\\SQLEXPRESS;Database=ReservationSystemDb;Trusted_Connection=True;MultipleActiveResultSets=true"
+"DefaultConnection": "Server=exmp\\SQLEXPRESS;Database=EmpireManagerDB;Integrated Security=SSPI;TrustServerCertificate=True""
 ```
 **`appsettings.json`** Windows Authentication:
 ```
-"DefaultConnection": "Server=exmp\\SQLEXPRESS;DataBase=ReservationSystemDb;Integrated Security=SSPI;TrustServerCertificate=True"
+"DefaultConnection": "Server=exmp\\SQLEXPRESS;DataBase=EmpireManagerDB;Integrated Security=SSPI;TrustServerCertificate=True""
 ```
 
 ## How to Run
